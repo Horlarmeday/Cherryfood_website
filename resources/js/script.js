@@ -79,5 +79,22 @@ $('.js--wp-4').waypoint(function(){
         }        
     });
 
+/** Map */    
+var map = new GMaps({
+  div: '.map',
+  lat: 6.5480357,
+  lng: 3.1438709,
+  zoom: 12
+});
+
+map.addMarker({
+  lat: 6.5480357,
+  lng: 3.1438709,
+  title: 'Lagos',
+  infoWindow: {
+	  content: '<p>Our Lagos HQ</p>'
+	}
+});
+
 });
 
